@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>과제#3 - 자기 소개 웹 페이지 작성</title>
+        <style>
+            body {
+                background: aliceblue;
+            }
+            h1 {
+                color: brown;
+                text-align: center;
+            }
+            h2 {
+                color: blue;
+                text-shadow: 3px 3px 3px lightblue;
+            }
+            header {
+                border-bottom: 1px solid gray;
+            }
+            nav ul {
+                border: 1px dotted gray;
+
+            }
+
+            #time td {
+                text-align: center;
+                padding: 10px;
+                height: 20px;
+                width: 100px;
+            }
+            footer {
+                background-color: orange;
+                border-radius: 20px;
+            }
+            a {
+                text-decoration: none;
+            }
+            p {
+                font-size: 1em;
+                text-indent: 1em;
+                font-family: 휴먼편지체;
+            }
+            li {
+                font-family: 휴먼편지체;
+            }
+            #col {
+                background-color: aquamarine;
+            }
+            #구분 {
+                background-color: lightyellow;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>About me</h1>
+            <hr>
+            <p>안녕하세요? 제 이름은 이현우입니다. 저는 올해 대학교를 입학한 새내기입니다.<br>
+                저는 다양한 관심분야와 취미활동은 없지만 학교생활을 열심히 해보겠습니다.
+            </p>
+        </header>
+        <nav>
+            <h2>목차</h2>
+            <ul>
+               <li><a href="#interest">관심분야</a></li>
+               <li><a href="#hobby">취미활동</a></li>
+               <li><a href="#time">강의시간표</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article id="interest">
+                <h2>관심분야</h2>
+                <hr>
+                <ul>
+                    <li>인공지능(AI)
+                        <ul>
+                            <li>다트머스 회의 1956년 AI 용어 탄생</li>
+                            <li>지도학습, 비지도학습, 자기지도학습</li>
+                            <li>제미나이(Gemini)</li>
+                        </ul>
+                    </li>
+                    <li>프로그래밍
+                        <ul>
+                            <li>절차적 언어, C언어</li>
+                            <li>전처리기지시문</li>
+                            <li>프로그램 개발</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="hobby">
+                <h2>취미 활동</h2>
+                <hr>
+                <table border="1">
+                    <tfoot>
+                        <tr><th>Exercise</th><th>Game</th></tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td><img src="media/exercise.png" width="200" height="200"></td>
+                            <td><img src="media/game.png" width="200" height="200"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            
+            <article id="time">
+                <h2>강의 시간표(2026년 1학기)</h2>
+                <hr>
+                <table border="1">
+                    <thead>
+                        <tr><th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td id="구분">09:00</td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td id="구분">10:00</td><td></td><td rowspan="3" id="col">프로그래밍언어실습1</td><td></td><td></td></tr>
+                        <tr><td id="구분">11:00</td><td></td><td></td><td></td></tr>
+                        <tr><td id="구분">12:00</td><td></td><td></td><td></td></tr>
+                        <tr><td id="구분">13:00</td><td></td><td></td><td></td><td rowspan="3" id="col">컴퓨터과학개론</td></tr>
+                        <tr><td id="구분">14:00</td><td rowspan="2" id="col">SW개발문제해결능력</td><td></td><td rowspan="3" id="col">인터넷콘텐츠</td></tr>
+                        <tr><td id="구분">15:00</td><td></td></tr>
+                        <tr><td id="구분">16:00</td><td></td><td></td><td></td></tr>
+                        <tr><td id="구분">17:00</td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <footer>
+                <p><a href="survey4.html">설문조사</a></p>
+                <p>Copyright 2026 by MYONGJI COLLEGE</p>
+        </footer>
+    </body>
+</html>
